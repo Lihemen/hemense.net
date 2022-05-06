@@ -1,0 +1,158 @@
+// GLOBAL VARIABLES
+$primary__color: #123434;
+$secondary__color: #fff;
+
+// MIXINS
+@mixin note {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+@mixin grid($num_col, $gap: 2rem) {
+  display: grid;
+  grid-template-columns: repeat($num_col, 1fr);
+  gap: $gap;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: monospace;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+body {
+  background-color: #222;
+}
+
+::selection {
+  background-color: #000;
+  color: #fff;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  .nav__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include note {
+      display: none;
+    }
+
+    .nav__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .nav__link {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 20px;
+        transition: all 0.3s ease-in-out;
+        &.active {
+          text-decoration: underline;
+          text-decoration-color: inherit;
+          text-decoration-thickness: 5px;
+        }
+      }
+    }
+  }
+
+  &.sticky {
+    background-color: #fff;
+
+    .nav__link {
+      color: #222 !important;
+    }
+  }
+}
+
+// HERO
+.hero {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url("./public/images/hemense.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  h1 {
+    font-size: 4rem;
+    letter-spacing: 15px;
+    font-weight: 900;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  small {
+    text-transform: uppercase;
+  }
+}
+
+.fa-github-square {
+  color: #333;
+}
+
+.fa-instagram-square {
+  color: #fd1d1d;
+}
+
+.fa-twitter-square {
+  color: #1da1f2;
+}
+
+.fa-facebook-square {
+  color: #1877f2;
+}
+
+.fa-linkedin-square {
+  color: #0077b5;
+}
