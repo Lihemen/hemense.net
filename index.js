@@ -25,9 +25,13 @@ const my_alert = `
 </div>
 `;
 
-document.querySelector("#alert__close").addEventListener("click", function () {
-  document.querySelector(".alert").remove();
-});
+const close_alert = document.querySelector("#alert__close");
+
+if (close_alert) {
+  close_alert.addEventListener("click", function () {
+    document.querySelector(".alert").remove();
+  });
+}
 
 document.querySelector("#age").innerHTML = new Date().getFullYear() - 1999;
 
