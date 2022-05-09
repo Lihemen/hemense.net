@@ -522,6 +522,84 @@ section h1::before {
   content: "PORTFOLIO";
 }
 
+#portfolio .selectors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio .selectors span {
+  cursor: pointer;
+}
+
+#portfolio .selectors span:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#portfolio .selectors span.active {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #20c997;
+          text-decoration-color: #20c997;
+  color: #20c997;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+
+#portfolio .portfolio__grid {
+  padding: 4rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  #portfolio .portfolio__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+@media (max-width: 500px) {
+  #portfolio .portfolio__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+
+#portfolio .portfolio__grid .col {
+  height: 100%;
+  background-color: red;
+}
+
+#portfolio .portfolio__grid .col:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
 #contact h1::before {
   content: "CONTACT";
 }

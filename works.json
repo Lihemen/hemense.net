@@ -1,15 +1,21 @@
 [
   {
-    "link": "https://www.zashaura.com",
-    "image": "./works/zashaura.png",
-    "title": "Zashaura",
+    "link": "https://avalon-interior.herokuapp.com/",
+    "image": "./works/comfy-house.png",
+    "title": "Comfy House",
     "tag": "e-commerce"
   },
   {
-    "link": "https://www.zashaura.com",
-    "image": "./works/zashaura.png",
-    "title": "Zashaura",
+    "link": "http://demo-mysteryshopper.herokuapp.com/",
+    "image": "./works/mystery-shopper.png",
+    "title": "Mystery Shopper",
     "tag": "e-commerce"
+  },
+  {
+    "link": "https://ofiice.herokuapp.com/",
+    "image": "./works/office.png",
+    "title": "My Office",
+    "tag": "office"
   },
   {
     "link": "https://www.zashaura.com",
