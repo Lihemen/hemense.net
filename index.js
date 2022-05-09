@@ -16,23 +16,6 @@ const changing = new Typed("#changing", {
   typeSpeed: 200,
 });
 
-const my_alert = `
-<div class="alert">
-  <div class="alert__error">
-    <span class="alert__text">Success</span>
-    <span><i class="fa-solid fa-close"></i></span>
-  </div>
-</div>
-`;
-
-const close_alert = document.querySelector("#alert__close");
-
-if (close_alert) {
-  close_alert.addEventListener("click", function () {
-    document.querySelector(".alert").remove();
-  });
-}
-
 document.querySelector("#age").innerHTML = new Date().getFullYear() - 1999;
 
 const sections = document.querySelectorAll("section");
@@ -83,3 +66,23 @@ const isInViewPort = (el) => {
 scroller.addEventListener("click", () => {
   window.scroll({ top: 0, left: 0, behavior: "smooth" });
 });
+
+function alerter(type, message) {
+  const markup = `
+  <div class="alert">
+    <div class="alert__${type}">
+      <span class="alert__text">${message}</span>
+      <button class="alert__close" style="background: transparent; color: #fff;"><i class="fa-solid fa-close"></i></button>
+    </div>
+  </div>
+`;
+  document.querySelector("body").insertAdjacentHTML("afterbegin", markup);
+}
+
+function addCloser(time = 1500) {
+  const my_alert = document.querySelector(".alert");
+  const closer = document.querySelector(".alert__close");
+
+  setTimeout(() => my_alert.remove(), time);
+  closer.addEventListener("click", () => my_alert.remove());
+}
