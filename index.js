@@ -63,12 +63,10 @@ const setElActive = (el) => {
 };
 
 const isInViewPort = (el) => {
-  var bounding = el.getBoundingClientRect();
-
-  const { top, left, right } = bounding;
+  var top = el.getBoundingClientRect().top;
   const vpHeight = window.innerHeight;
-  const vpWidth = window.outerWidth;
-  return left >= 0 && top + 50 <= vpHeight && right <= vpWidth;
+
+  return top + 50 <= vpHeight;
 };
 
 scroller.addEventListener("click", () => {
