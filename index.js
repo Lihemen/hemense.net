@@ -36,7 +36,6 @@ window.addEventListener("scroll", function (e) {
   for (let i = 0; i < sections.length; i++) {
     const id = sections[i].id;
     if (isInViewPort(sections[i])) {
-      console.log("in view");
       const link = document.querySelector(`a[href="#${id}"]`);
       setParentActive(link);
       if (id !== "") {
@@ -96,5 +95,46 @@ function addCloser(time = 1500) {
 const selectors = document.querySelectorAll(".selectors span");
 
 selectors.forEach((span) => {
-  span.addEventListener("click", () => setElActive(span));
+  span.addEventListener("click", () => {
+    setElActive(span);
+    const filter = span.getAttribute("data-filter");
+
+    const works = document.querySelectorAll(".portfolio__grid .col");
+
+    works.forEach((work) => {
+      if (filter !== "" && work.getAttribute("data-filter") !== filter) {
+        work.style.display = "none";
+      } else {
+        work.style.display = "block";
+      }
+    });
+  });
 });
+
+function populateWorks() {
+  const xhr = new XMLHttpRequest();
+
+  xhr.open("GET", "./works.json");
+  xhr.send(null);
+
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      const works = JSON.parse(xhr.responseText);
+      const portfolio_grid = document.querySelector(".portfolio__grid");
+
+      works.forEach((work) => {
+        portfolio_grid.innerHTML += `
+        <div class="col" data-filter=${work.tag}>
+          <img src=${work.image} alt=${work.title} />
+          <a class="overlay" href=${work.link} target="_blank" rel="noreferre noopener">
+            <i class="fa-solid fa-eye"></i>
+            <p>${work.title}</p>
+          </a>
+        </div>
+        `;
+      });
+    }
+  };
+}
+
+populateWorks();

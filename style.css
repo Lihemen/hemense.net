@@ -388,9 +388,10 @@ section h1::before {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 768px) {
@@ -400,9 +401,10 @@ section h1::before {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-auto-rows: 1fr;
   }
 }
 
@@ -449,9 +451,10 @@ section h1::before {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 768px) {
@@ -461,9 +464,10 @@ section h1::before {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-auto-rows: 1fr;
   }
 }
 
@@ -558,9 +562,10 @@ section h1::before {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 768px) {
@@ -570,9 +575,10 @@ section h1::before {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-auto-rows: 1fr;
   }
 }
 
@@ -583,21 +589,64 @@ section h1::before {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-auto-rows: 1fr;
   }
 }
 
 #portfolio .portfolio__grid .col {
   height: 100%;
-  background-color: red;
+  width: 100%;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-#portfolio .portfolio__grid .col:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
+#portfolio .portfolio__grid .col img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#portfolio .portfolio__grid .col .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 99;
+  visibility: hidden;
+  font-size: large;
+}
+
+#portfolio .portfolio__grid .col .overlay svg {
+  color: #20c997;
+}
+
+#portfolio .portfolio__grid .col:hover .overlay {
+  visibility: visible;
+}
+
+#portfolio .portfolio__grid .col:hover img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
 }
 
 #contact h1::before {
@@ -679,10 +728,12 @@ section h1::before {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-rows: 1fr;
   width: 80%;
+  grid-auto-rows: unset;
 }
 
 #contact #contact-form input,
