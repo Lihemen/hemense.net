@@ -65,7 +65,7 @@ const isInViewPort = (el) => {
   var top = el.getBoundingClientRect().top;
   const vpHeight = window.innerHeight;
 
-  return top + 50 <= vpHeight;
+  return top + 200 <= vpHeight;
 };
 
 scroller.addEventListener("click", () => {
