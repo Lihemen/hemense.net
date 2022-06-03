@@ -22,5 +22,11 @@
     "image": "./public/works/zashaura.png",
     "title": "Zashaura",
     "tag": "e-commerce"
+  },
+  {
+    "link": "https://lihemen.github.io/tip-calculator/",
+    "image": "./public/works/tip_calculator.png",
+    "title": "Tip Calculator",
+    "tag": "utilities"
   }
 ]
