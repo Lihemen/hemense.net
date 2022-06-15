@@ -1,5 +1,17 @@
 [
   {
+    "link": "https://lihemen.github.io/witcher",
+    "image": "./public/works/witcher.png",
+    "title": "Watch Magnet",
+    "tag": "e-commerce"
+  },
+  {
+    "link": "https://lihemen.github.io/tote",
+    "image": "./public/works/bolsa.png",
+    "title": "Tote Bag Store",
+    "tag": "e-commerce"
+  },
+  {
     "link": "https://avalon-interior.herokuapp.com/",
     "image": "./public/works/comfy-house.png",
     "title": "Comfy House",
