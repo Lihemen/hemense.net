@@ -18,6 +18,12 @@
     "tag": "e-commerce"
   },
   {
+    "link": "https://daniel-eje.herokuapp.com",
+    "image": "./public/works/daniel_eje.png",
+    "title": "Daniel Eje Portfolio",
+    "tag": "office"
+  },
+  {
     "link": "http://demo-mysteryshopper.herokuapp.com/",
     "image": "./public/works/mystery-shopper.png",
     "title": "Mystery Shopper",

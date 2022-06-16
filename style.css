@@ -585,9 +585,14 @@ section h1::before {
 #portfolio .portfolio__grid .col {
   height: 100%;
   width: 100%;
+  text-align: center;
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+#portfolio .portfolio__grid .col p {
+  font-size: 14px;
 }
 
 #portfolio .portfolio__grid .col img {
@@ -878,8 +883,5 @@ section h1::before {
 
 .fa-instagram:hover {
   color: #e1306c;
-}
-.fa-github:hover {
-  color: #4078c0;
 }
 /*# sourceMappingURL=style.css.map */
