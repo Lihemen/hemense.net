@@ -1,5 +1,17 @@
 [
   {
+    "link": "https://zoenewdawn.com",
+    "image": "./public/works/zoenewdawn.png",
+    "title": "Zoe New Dawn",
+    "tag": "office"
+  },
+  {
+    "link": "https://www.zashaura.com",
+    "image": "./public/works/zashaura.png",
+    "title": "Zashaura",
+    "tag": "e-commerce"
+  },
+  {
     "link": "https://lihemen.github.io/witcher",
     "image": "./public/works/witcher.png",
     "title": "Watch Magnet",
@@ -36,15 +48,10 @@
     "tag": "office"
   },
   {
-    "link": "https://www.zashaura.com",
-    "image": "./public/works/zashaura.png",
-    "title": "Zashaura",
-    "tag": "e-commerce"
-  },
-  {
     "link": "https://lihemen.github.io/tip-calculator/",
     "image": "./public/works/tip_calculator.png",
     "title": "Tip Calculator",
     "tag": "utilities"
   }
 ]
+
