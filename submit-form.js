@@ -10,6 +10,10 @@
           honeypot = elements[k].value;
           return false;
         }
+        if (elements[k].name === "Crytooccaf") {
+          honeypot = elements[k].value;
+          return false;
+        }
         return true;
       })
       .map(function (k) {
@@ -109,3 +113,4 @@
     }
   }
 })();
+
