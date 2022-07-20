@@ -68,6 +68,9 @@
       return false;
     }
 
+    if (data.name === "Crytooccaf") {
+      return false;
+    }
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
