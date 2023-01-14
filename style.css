@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,13 +13,14 @@ html {
   font-size: 14px;
   scroll-behavior: smooth;
   scroll-snap-align: start;
-  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
   background-color: #ddd;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
 }
 
@@ -84,16 +85,22 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .sidebar .image__container {
   padding-top: 2rem;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.h-full {
+  height: 100%;
 }
 
 .sidebar .image__container img {
@@ -109,17 +116,19 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  /* height: 100%; */
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 2rem 0;
+  margin-top: 4rem;
 }
 
 .sidebar .sidebar__menu .sidebar__menu__item {
   font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 .sidebar .sidebar__menu .sidebar__menu__item .sidebar__menu__link {
@@ -143,11 +152,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .sidebar__socials li:not(:last-child) {
@@ -172,8 +181,20 @@ button {
 }
 
 .main .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("./public/images/hero.jpg");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./public/images/hero.jpg");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(rgba(0, 0, 0, 0.8))
+    ),
+    url('./public/images/hero.jpg');
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('./public/images/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -187,14 +208,14 @@ button {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   position: relative;
 }
@@ -234,7 +255,8 @@ button {
   transition: all 0.2s linear;
 }
 
-.main .hero .hero__cta:active, .main .hero .hero__cta:hover {
+.main .hero .hero__cta:active,
+.main .hero .hero__cta:hover {
   background-color: #20c997;
   color: rgba(250, 250, 250, 0.9);
 }
@@ -248,15 +270,15 @@ button {
   position: absolute;
   bottom: 30px;
   -webkit-animation-name: bubble_down;
-          animation-name: bubble_down;
+  animation-name: bubble_down;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -330,7 +352,7 @@ section h1::before {
 }
 
 #about h1::before {
-  content: "ABOUT ME";
+  content: 'ABOUT ME';
 }
 
 #about .bio {
@@ -338,22 +360,22 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: start;
-      align-self: start;
+  align-self: start;
 }
 
 @media (max-width: 768px) {
   #about .bio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
 #about .bio .content {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-right: 2rem;
 }
 
@@ -379,18 +401,18 @@ section h1::before {
 }
 
 #services h1::before {
-  content: "SERVICES";
+  content: 'SERVICES';
 }
 
 #services ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-rows: 1fr;
 }
 
@@ -398,12 +420,12 @@ section h1::before {
   #services ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     grid-auto-rows: 1fr;
   }
 }
@@ -413,8 +435,8 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 #services ul li svg {
@@ -428,12 +450,12 @@ section h1::before {
 #services ul li p:not(.lead) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #resume h1::before {
-  content: "SUMMARY";
+  content: 'SUMMARY';
 }
 
 #resume .resume__item:not(:first-child) {
@@ -448,12 +470,12 @@ section h1::before {
 #resume .resume__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-rows: 1fr;
 }
 
@@ -461,12 +483,12 @@ section h1::before {
   #resume .resume__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     grid-auto-rows: 1fr;
   }
 }
@@ -502,11 +524,11 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 
@@ -518,12 +540,13 @@ section h1::before {
   transition: all 0.3s ease;
 }
 
-#resume .download a:hover, #resume .download a:focus {
+#resume .download a:hover,
+#resume .download a:focus {
   background: #6c757d;
 }
 
 #portfolio h1::before {
-  content: "PORTFOLIO";
+  content: 'PORTFOLIO';
 }
 
 #portfolio .selectors {
@@ -531,11 +554,11 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #portfolio .selectors span {
@@ -549,7 +572,7 @@ section h1::before {
 #portfolio .selectors span.active {
   text-decoration: underline;
   -webkit-text-decoration-color: #20c997;
-          text-decoration-color: #20c997;
+  text-decoration-color: #20c997;
   color: #20c997;
   text-decoration-thickness: 3px;
   text-underline-offset: 10px;
@@ -559,12 +582,12 @@ section h1::before {
   padding: 4rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr) [3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-rows: 1fr;
 }
 
@@ -572,12 +595,12 @@ section h1::before {
   #portfolio .portfolio__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     grid-auto-rows: 1fr;
   }
 }
@@ -599,7 +622,7 @@ section h1::before {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #portfolio .portfolio__grid .col .overlay {
@@ -613,15 +636,15 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   z-index: 99;
   visibility: hidden;
   font-size: large;
@@ -637,11 +660,11 @@ section h1::before {
 
 #portfolio .portfolio__grid .col:hover img {
   -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 #contact h1::before {
-  content: "CONTACT";
+  content: 'CONTACT';
 }
 
 #contact .container {
@@ -654,14 +677,14 @@ section h1::before {
   #contact .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -689,8 +712,8 @@ section h1::before {
 
 #contact .container .d-flex .sidebar__socials {
   -webkit-box-pack: start !important;
-      -ms-flex-pack: start !important;
-          justify-content: flex-start !important;
+  -ms-flex-pack: start !important;
+  justify-content: flex-start !important;
   color: unset;
 }
 
@@ -699,29 +722,29 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 #contact #contact-form .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr) [2];
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-auto-rows: 1fr;
   width: 80%;
   grid-auto-rows: unset;
@@ -765,9 +788,10 @@ section h1::before {
   transition: all 0.2s ease-in;
 }
 
-#contact #contact-form button:hover, #contact #contact-form button:active {
+#contact #contact-form button:hover,
+#contact #contact-form button:active {
   -webkit-filter: brightness(0.8);
-          filter: brightness(0.8);
+  filter: brightness(0.8);
 }
 
 #scrollTop {
@@ -804,13 +828,13 @@ section h1::before {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .alert > div svg {
@@ -853,14 +877,14 @@ section h1::before {
 @-webkit-keyframes bounce {
   to {
     -webkit-transform: translateY(-10px) scale(1.1);
-            transform: translateY(-10px) scale(1.1);
+    transform: translateY(-10px) scale(1.1);
   }
 }
 
 @keyframes bounce {
   to {
     -webkit-transform: translateY(-10px) scale(1.1);
-            transform: translateY(-10px) scale(1.1);
+    transform: translateY(-10px) scale(1.1);
   }
 }
 

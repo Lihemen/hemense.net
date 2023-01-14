@@ -1,5 +1,17 @@
 [
   {
+    "link": "https://work-bench-traceability-page.netlify.app/",
+    "image": "./public/works/traceability.png",
+    "title": "Workbench Traceability",
+    "tag": "office"
+  },
+  {
+    "link": "https://phml-test.netlify.app/",
+    "image": "./public/works/phml.png",
+    "title": "PHML",
+    "tag": "office"
+  },
+  {
     "link": "https://zoenewdawn.com",
     "image": "./public/works/zoenewdawn.png",
     "title": "Zoe New Dawn",
@@ -15,13 +27,13 @@
     "link": "https://lihemen.github.io/witcher",
     "image": "./public/works/witcher.png",
     "title": "Watch Magnet",
-    "tag": "e-commerce"
+    "tag": "utilities"
   },
   {
     "link": "https://lihemen.github.io/tote",
     "image": "./public/works/bolsa.png",
     "title": "Tote Bag Store",
-    "tag": "e-commerce"
+    "tag": "utilities"
   },
   {
     "link": "https://avalon-interior.herokuapp.com/",
@@ -36,22 +48,9 @@
     "tag": "office"
   },
   {
-    "link": "http://demo-mysteryshopper.herokuapp.com/",
-    "image": "./public/works/mystery-shopper.png",
-    "title": "Mystery Shopper",
-    "tag": "e-commerce"
-  },
-  {
     "link": "https://ofiice.herokuapp.com/",
     "image": "./public/works/office.png",
     "title": "My Office",
     "tag": "office"
-  },
-  {
-    "link": "https://lihemen.github.io/tip-calculator/",
-    "image": "./public/works/tip_calculator.png",
-    "title": "Tip Calculator",
-    "tag": "utilities"
   }
 ]
-
