@@ -1,6 +1,12 @@
 [
   {
-    "link": "https://work-bench-traceability-page.netlify.app/",
+    "link": "https://furbar.vercel.app",
+    "image": "./public/works/furbar.png",
+    "title": "Furbar Furnitures",
+    "tag": "e-commerce"
+  },
+  {
+    "link": "https://traceability.workbench.exchange",
     "image": "./public/works/traceability.png",
     "title": "Workbench Traceability",
     "tag": "office"
