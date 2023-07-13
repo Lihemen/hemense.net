@@ -1,6 +1,18 @@
 [
   {
-    "link": "https://work-bench-traceability-page.netlify.app/",
+    "link": "https://lottery-nine-zeta.vercel.app",
+    "image": "./public/works/scratchme.png",
+    "title": "ScratMe Lottery",
+    "tag": "business"
+  },
+  {
+    "link": "https://reactsyncdash.netlify.app/",
+    "image": "./public/works/syncdashboard.png",
+    "title": "Sync Dashboard",
+    "tag": "business"
+  },
+  {
+    "link": "https://traceability.workbench.exchange",
     "image": "./public/works/traceability.png",
     "title": "Workbench Traceability",
     "tag": "office"
@@ -9,12 +21,6 @@
     "link": "https://phml-test.netlify.app/",
     "image": "./public/works/phml.png",
     "title": "PHML",
-    "tag": "office"
-  },
-  {
-    "link": "https://zoenewdawn.com",
-    "image": "./public/works/zoenewdawn.png",
-    "title": "Zoe New Dawn",
     "tag": "office"
   },
   {
@@ -34,23 +40,5 @@
     "image": "./public/works/bolsa.png",
     "title": "Tote Bag Store",
     "tag": "utilities"
-  },
-  {
-    "link": "https://avalon-interior.herokuapp.com/",
-    "image": "./public/works/comfy-house.png",
-    "title": "Comfy House",
-    "tag": "e-commerce"
-  },
-  {
-    "link": "https://daniel-eje.herokuapp.com",
-    "image": "./public/works/daniel_eje.png",
-    "title": "Daniel Eje Portfolio",
-    "tag": "office"
-  },
-  {
-    "link": "https://ofiice.herokuapp.com/",
-    "image": "./public/works/office.png",
-    "title": "My Office",
-    "tag": "office"
   }
 ]
