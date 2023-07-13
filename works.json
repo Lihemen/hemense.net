@@ -11,11 +11,18 @@
     "title": "Sync Dashboard",
     "tag": "business"
   },
+
   {
     "link": "https://traceability.workbench.exchange",
     "image": "./public/works/traceability.png",
     "title": "Workbench Traceability",
     "tag": "office"
+  },
+  {
+    "link": "https://furbar.vercel.app",
+    "image": "./public/works/furbar.png",
+    "title": "Furbar Furnitures",
+    "tag": "e-commerce"
   },
   {
     "link": "https://phml-test.netlify.app/",
