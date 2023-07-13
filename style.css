@@ -108,6 +108,7 @@ button {
   height: 180px;
   border-radius: 50%;
   border: solid 8px #343a40;
+  object-fit: contain;
 }
 
 .sidebar .sidebar__menu {
