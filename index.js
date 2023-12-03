@@ -17,8 +17,6 @@ const changing = new Typed('#changing', {
   typeSpeed: 200,
 });
 
-document.querySelector('#age').innerHTML = new Date().getFullYear() - 1999;
-
 const sections = document.querySelectorAll('section');
 const links = document.querySelectorAll('.sidebar__menu__link');
 const scroller = document.querySelector('#scrollTop');

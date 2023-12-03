@@ -13,8 +13,8 @@ html {
   font-size: 14px;
   scroll-behavior: smooth;
   scroll-snap-align: start;
-  font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Poppins", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -189,13 +189,13 @@ button {
       from(rgba(0, 0, 0, 0.8)),
       to(rgba(0, 0, 0, 0.8))
     ),
-    url('./public/images/hero.jpg');
+    url("./public/images/hero.jpg");
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.8)
     ),
-    url('./public/images/hero.jpg');
+    url("./public/images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -353,7 +353,7 @@ section h1::before {
 }
 
 #about h1::before {
-  content: 'ABOUT ME';
+  content: "ABOUT ME";
 }
 
 #about .bio {
@@ -402,7 +402,7 @@ section h1::before {
 }
 
 #services h1::before {
-  content: 'SERVICES';
+  content: "SERVICES";
 }
 
 #services ul {
@@ -456,7 +456,7 @@ section h1::before {
 }
 
 #resume h1::before {
-  content: 'SUMMARY';
+  content: "SUMMARY";
 }
 
 #resume .resume__item:not(:first-child) {
@@ -547,7 +547,7 @@ section h1::before {
 }
 
 #portfolio h1::before {
-  content: 'PORTFOLIO';
+  content: "PORTFOLIO";
 }
 
 #portfolio .selectors {
@@ -560,14 +560,12 @@ section h1::before {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #portfolio .selectors span {
   cursor: pointer;
-}
-
-#portfolio .selectors span:not(:last-child) {
-  margin-right: 2rem;
 }
 
 #portfolio .selectors span.active {
@@ -596,8 +594,8 @@ section h1::before {
   #portfolio .portfolio__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -665,7 +663,7 @@ section h1::before {
 }
 
 #contact h1::before {
-  content: 'CONTACT';
+  content: "CONTACT";
 }
 
 #contact .container {
@@ -909,4 +907,17 @@ section h1::before {
 .fa-instagram:hover {
   color: #e1306c;
 }
+
+@media (min-width: 1440px) {
+  .mw-80 {
+    max-width: 80%;
+  }
+}
+
+.resume__grid ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

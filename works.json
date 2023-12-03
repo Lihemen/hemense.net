@@ -1,24 +1,5 @@
 [
   {
-    "link": "https://lottery-nine-zeta.vercel.app",
-    "image": "./public/works/scratchme.png",
-    "title": "ScratMe Lottery",
-    "tag": "business"
-  },
-  {
-    "link": "https://reactsyncdash.netlify.app/",
-    "image": "./public/works/syncdashboard.png",
-    "title": "Sync Dashboard",
-    "tag": "business"
-  },
-
-  {
-    "link": "https://traceability.workbench.exchange",
-    "image": "./public/works/traceability.png",
-    "title": "Workbench Traceability",
-    "tag": "office"
-  },
-  {
     "link": "https://furbar.vercel.app",
     "image": "./public/works/furbar.png",
     "title": "Furbar Furnitures",
@@ -29,6 +10,30 @@
     "image": "./public/works/phml.png",
     "title": "PHML",
     "tag": "office"
+  },
+  {
+    "link": "https://lottery-nine-zeta.vercel.app",
+    "image": "./public/works/scratchme.png",
+    "title": "ScratMe Lottery",
+    "tag": "business"
+  },
+  {
+    "link": "https://traceability.workbench.exchange",
+    "image": "./public/works/traceability.png",
+    "title": "Workbench Traceability",
+    "tag": "office"
+  },
+  {
+    "link": "https://bankx-git-development-afex.vercel.app",
+    "image": "./public/works/bankx.png",
+    "title": "BankX Development",
+    "tag": "business"
+  },
+  {
+    "link": "https://sherlock.afex.dev",
+    "image": "./public/works/sherlock.png",
+    "title": "Sherlock",
+    "tag": "business"
   },
   {
     "link": "https://www.zashaura.com",
