@@ -1,38 +1,32 @@
 [
   {
-    "link": "https://furbar.vercel.app",
-    "image": "./public/works/furbar.png",
-    "title": "Furbar Furnitures",
-    "tag": "e-commerce"
-  },
-  {
-    "link": "https://phml-test.netlify.app/",
-    "image": "./public/works/phml.png",
-    "title": "PHML",
-    "tag": "office"
-  },
-  {
-    "link": "https://scratchmelottery.com",
-    "image": "./public/works/scratchme.png",
-    "title": "ScratMe Lottery",
+    "link": "https://africaexchange.com",
+    "image": "./public/works/africaexchange.png",
+    "title": "Africa Exchange",
     "tag": "business"
-  },
-  {
-    "link": "https://traceability.workbench.exchange",
-    "image": "./public/works/traceability.png",
-    "title": "Workbench Traceability",
-    "tag": "office"
   },
   {
     "link": "https://bankx-git-development-afex.vercel.app",
     "image": "./public/works/bankx.png",
-    "title": "BankX Development",
+    "title": "BankX NeoBank",
     "tag": "business"
   },
   {
     "link": "https://sherlock.afex.dev",
     "image": "./public/works/sherlock.png",
     "title": "Sherlock",
+    "tag": "utilities"
+  },
+  {
+    "link": "https://scratchmelottery.com",
+    "image": "./public/works/scratchme.png",
+    "title": "ScratchMe Lottery",
+    "tag": "utilities"
+  },
+  {
+    "link": "https://ketoriatravels.com",
+    "image": "./public/works/ketoria_travels.png",
+    "title": "Ketoria Travels",
     "tag": "business"
   },
   {
@@ -42,15 +36,21 @@
     "tag": "e-commerce"
   },
   {
-    "link": "https://lihemen.github.io/witcher",
-    "image": "./public/works/witcher.png",
-    "title": "Watch Magnet",
-    "tag": "utilities"
+    "link": "https://bismerksolicitors.com",
+    "image": "./public/works/bismerk.png",
+    "title": "Bismerk",
+    "tag": "office"
   },
   {
-    "link": "https://lihemen.github.io/tote",
-    "image": "./public/works/bolsa.png",
-    "title": "Tote Bag Store",
-    "tag": "utilities"
+    "link": "https://phml-test.netlify.app/",
+    "image": "./public/works/phml.png",
+    "title": "PHML",
+    "tag": "office"
+  },
+  {
+    "link": "https://furbar.vercel.app",
+    "image": "./public/works/furbar.png",
+    "title": "Furbar Furnitures",
+    "tag": "e-commerce"
   }
 ]
