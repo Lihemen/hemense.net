@@ -8,7 +8,7 @@ const changing = new Typed('#changing', {
   smartBackspace: true,
   backSpeed: 50,
   loop: true,
-  loopCount: Infinity,
+  loopCount: Number.POSITIVE_INFINITY,
   showCursor: true,
   cursorChar: '|',
   autoInsertCss: true,
